@@ -1,0 +1,80 @@
+/* Logo animation styling */
+.brand-logo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 70%;
+    height: auto;
+    z-index: 1000;
+    pointer-events: none;
+    animation: moveAndZoomOut 8s ease forwards;
+    animation-delay: 3s;
+}
+
+/* Define the animation for movement and size reduction */
+@keyframes moveAndZoomOut {
+    0% {
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    100% {
+        top: 1%;
+        transform: translate(-50%, 0) scale(0.5);
+        opacity: 0.5;
+    }
+}
+
+/* Media Controls Styling */
+#audio-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 50px; /* Adjusted to move it higher */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1001;
+}
+
+/* Buttons Styling */
+#audio-controls button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 20px;
+    color: white;
+}
+
+/* Volume Slider Styling */
+#volume-bar {
+    width: 100px;
+    height: 5px;
+    appearance: none;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    outline: none;
+    margin-left: 10px;
+}
+
+#volume-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#volume-bar::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}

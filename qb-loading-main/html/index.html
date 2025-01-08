@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta id="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <!-- Audio Background -->
+        <audio id="audio-player" src="/assets/audio/noncopyright.mp3" preload="auto"></audio>
+
+        <!-- Video Background -->
+        <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;">
+            <video id="video" style="width: 100%; height: 100%; object-fit: cover;" autoplay loop muted>
+                <source type="video/mp4" src="/assets/video/owrp-load.mp4">
+            </video>
+        </div>
+
+        <!-- Media Controls -->
+        <div id="audio-controls">
+            <button id="prev-button">
+                <i class="fas fa-step-backward"></i>
+            </button>
+            <button id="play-pause-button">
+                <i id="play-pause-icon" class="fas fa-play"></i>
+            </button>
+            <button id="next-button">
+                <i class="fas fa-step-forward"></i>
+            </button>
+
+            <!-- Mute Button -->
+            <button id="mute-button">
+                <i id="mute-icon" class="fas fa-volume-up"></i>
+            </button>
+
+            <!-- Volume Slider -->
+            <input id="volume-bar" type="range" min="0" max="1" step="0.1" value="0.1">
+        </div>
+
+        <!-- Main Content -->
+        <div id="loading-main" style="min-height: auto;">
+            <div class="absolute-bottom q-pa-xl">
+                <q-card flat style="width: auto; background: transparent;">
+                    <q-card-section class="row items-center no-wrap">
+                        <!-- Logo -->
+                        <img class="brand-logo" src="/assets/branding/qbcore.svg" alt="OWRP Logo">
+                        <q-space></q-space>
+                    </q-card-section>
+                </q-card>
+            </div>
+        </div>
+
+        <script>
+            const audioPlayer = document.getElementById("audio-player");
+            const playPauseButton = document.getElementById("play-pause-button");
+            const playPauseIcon = document.getElementById("play-pause-icon");
+            const prevButton = document.getElementById("prev-button");
+            const nextButton = document.getElementById("next-button");
+            const muteButton = document.getElementById("mute-button");
+            const muteIcon = document.getElementById("mute-icon");
+            const volumeBar = document.getElementById("volume-bar");
+
+            // Playlist
+            const playlist = [
+                { title: "Street Lights - NCS", src: "/assets/audio/noncopyright.mp3" },
+                { title: "Put On - Jeezy", src: "/assets/audio/Put-On.mp3" },
+                { title: "Low Life - Future", src: "/assets/audio/Low-Life.mp3" }
+            ];
+            let currentTrackIndex = 0;
+
+            // Set default volume to 10%
+            audioPlayer.volume = 0.1;
+
+            // Auto-play the first track
+            audioPlayer.play();
+
+            // Update audio player
+            function updateTrack() {
+                const track = playlist[currentTrackIndex];
+                audioPlayer.src = track.src;
+                audioPlayer.play();
+                playPauseIcon.classList.remove("fa-play");
+                playPauseIcon.classList.add("fa-pause");
+            }
+
+            // Play/Pause functionality
+            playPauseButton.addEventListener("click", () => {
+                if (audioPlayer.paused) {
+                    audioPlayer.play();
+                    playPauseIcon.classList.remove("fa-play");
+                    playPauseIcon.classList.add("fa-pause");
+                } else {
+                    audioPlayer.pause();
+                    playPauseIcon.classList.remove("fa-pause");
+                    playPauseIcon.classList.add("fa-play");
+                }
+            });
+
+            // Skip to previous track
+            prevButton.addEventListener("click", () => {
+                currentTrackIndex = (currentTrackIndex - 1 + playlist.length) % playlist.length;
+                updateTrack();
+            });
+
+            // Skip to next track
+            nextButton.addEventListener("click", () => {
+                currentTrackIndex = (currentTrackIndex + 1) % playlist.length;
+                updateTrack();
+            });
+
+            // Automatically play the next track when the current one ends
+            audioPlayer.addEventListener("ended", () => {
+                currentTrackIndex = (currentTrackIndex + 1) % playlist.length;
+                updateTrack();
+            });
+
+            // Mute/Unmute functionality
+            muteButton.addEventListener("click", () => {
+                if (audioPlayer.muted) {
+                    audioPlayer.muted = false;
+                    muteIcon.classList.remove("fa-volume-mute");
+                    muteIcon.classList.add("fa-volume-up");
+                } else {
+                    audioPlayer.muted = true;
+                    muteIcon.classList.remove("fa-volume-up");
+                    muteIcon.classList.add("fa-volume-mute");
+                }
+            });
+
+            // Volume bar control
+            volumeBar.addEventListener("input", (event) => {
+                audioPlayer.volume = event.target.value;
+            });
+        </script>
+    </body>
+</html>
