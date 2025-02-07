@@ -29,7 +29,7 @@
 
 ## How To Customize
 
-* #### To change .mp3 files drop 3 new files in the `assets` folder then head over to [html/index.html Lines 67 - 69](https://github.com/OfficerMills/qb-loading/blob/main/qb-loading-main%2Fhtml%2Findex.html#L67-L69) and replace the current mp3 names with the updated names(must match file names of newly added mp3 files).
+* #### To change .mp3 files drop 3 new files in the `assets/audio` folder then head over to [html/index.html Lines 67 - 69](https://github.com/OfficerMills/qb-loading/blob/main/qb-loading-main%2Fhtml%2Findex.html#L67-L69) and replace the current mp3 names with the updated names(must match file names of newly added mp3 files).
 * #### To change the logo to your custom logo, drop your new logo home in the `assets/branding` folder and remove the current image. Rename your image to
 * #### Add 3 custom .mp3 files to use in the built in media player(loading video will not play sound, must use .mp3)
 * #### Volume present to 10% of max for comfortable listening.
