@@ -12,7 +12,7 @@
     animation-delay: 3s;
 }
 
-/* Define the animation for movement and size reduction */
+/*Adjust fade out animation below./
 @keyframes moveAndZoomOut {
     0% {
         top: 50%;
