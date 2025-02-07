@@ -30,3 +30,5 @@
 * #### To change the logo to your custom logo, drop your new logo home in the `assets/branding` folder and remove the current image. Rename your image to `qbcore.svg` to make things easier. Done.
 * #### Add your favorite .mp3 files to use the built in media player(loading video will not play sound, must use .mp3)
 * #### Volume present to 10% of max for comfortable listening.
+
+![keyfeatures](https://user-images.githubusercontent.com/91661118/154784761-d9e1a3de-3f34-47dc-afc2-0aecb6d17042.png)
