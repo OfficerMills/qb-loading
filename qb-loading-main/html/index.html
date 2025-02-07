@@ -8,17 +8,14 @@
     </head>
 
     <body>
-        <!-- Audio Background -->
         <audio id="audio-player" src="/assets/audio/noncopyright.mp3" preload="auto"></audio>
 
-        <!-- Video Background -->
         <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;">
             <video id="video" style="width: 100%; height: 100%; object-fit: cover;" autoplay loop muted>
                 <source type="video/mp4" src="/assets/video/owrp-load.mp4">
             </video>
         </div>
 
-        <!-- Media Controls -->
         <div id="audio-controls">
             <button id="prev-button">
                 <i class="fas fa-step-backward"></i>
@@ -30,16 +27,12 @@
                 <i class="fas fa-step-forward"></i>
             </button>
 
-            <!-- Mute Button -->
             <button id="mute-button">
                 <i id="mute-icon" class="fas fa-volume-up"></i>
             </button>
-
-            <!-- Volume Slider -->
             <input id="volume-bar" type="range" min="0" max="1" step="0.1" value="0.1">
         </div>
 
-        <!-- Main Content -->
         <div id="loading-main" style="min-height: auto;">
             <div class="absolute-bottom q-pa-xl">
                 <q-card flat style="width: auto; background: transparent;">
@@ -62,7 +55,7 @@
             const muteIcon = document.getElementById("mute-icon");
             const volumeBar = document.getElementById("volume-bar");
 
-            // Playlist
+            // Playlist Adjust Here
             const playlist = [
                 { title: "Street Lights - NCS", src: "/assets/audio/noncopyright.mp3" },
                 { title: "Put On - Jeezy", src: "/assets/audio/Put-On.mp3" },
@@ -73,10 +66,8 @@
             // Set default volume to 10%
             audioPlayer.volume = 0.1;
 
-            // Auto-play the first track
             audioPlayer.play();
 
-            // Update audio player
             function updateTrack() {
                 const track = playlist[currentTrackIndex];
                 audioPlayer.src = track.src;
@@ -85,7 +76,6 @@
                 playPauseIcon.classList.add("fa-pause");
             }
 
-            // Play/Pause functionality
             playPauseButton.addEventListener("click", () => {
                 if (audioPlayer.paused) {
                     audioPlayer.play();
@@ -97,26 +87,20 @@
                     playPauseIcon.classList.add("fa-play");
                 }
             });
-
-            // Skip to previous track
             prevButton.addEventListener("click", () => {
                 currentTrackIndex = (currentTrackIndex - 1 + playlist.length) % playlist.length;
                 updateTrack();
             });
 
-            // Skip to next track
             nextButton.addEventListener("click", () => {
                 currentTrackIndex = (currentTrackIndex + 1) % playlist.length;
                 updateTrack();
             });
 
-            // Automatically play the next track when the current one ends
             audioPlayer.addEventListener("ended", () => {
                 currentTrackIndex = (currentTrackIndex + 1) % playlist.length;
                 updateTrack();
             });
-
-            // Mute/Unmute functionality
             muteButton.addEventListener("click", () => {
                 if (audioPlayer.muted) {
                     audioPlayer.muted = false;
@@ -129,7 +113,6 @@
                 }
             });
 
-            // Volume bar control
             volumeBar.addEventListener("input", (event) => {
                 audioPlayer.volume = event.target.value;
             });
