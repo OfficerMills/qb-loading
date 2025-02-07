@@ -23,12 +23,6 @@
 * #### Audio pause and unpause toggle switch
 * #### Autoplay carousel images toggle switch
 
-<br>
-
-## Change to Carousel or Video
-<div align="middle">
-    <img width="auto" src="https://user-images.githubusercontent.com/91661118/154641230-17b3da6f-e731-472c-8447-d280d2d28c82.png"/>
-</div>
 
 * #### Simply locate the HTML file found in: "html/index.html" exactly as shown underneath 
 
