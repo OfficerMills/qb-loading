@@ -10,7 +10,6 @@
 
 ![Preview](https://media.giphy.com/media/9uXOxGSDdZebChu28r/giphy.gif)
 
-## Key Features
 <div align="middle">
     <img width="auto" src="https://user-images.githubusercontent.com/91661118/154636617-a2ad4c09-4b60-4438-832a-ed1c505b52ea.png"/>
 </div>
