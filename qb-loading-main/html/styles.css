@@ -1,4 +1,3 @@
-/* Logo animation styling */
 .brand-logo {
     position: fixed;
     top: 50%;
@@ -26,13 +25,12 @@
     }
 }
 
-/* Media Controls Styling */
 #audio-controls {
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 50px; /* Adjusted to move it higher */
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
     background: rgba(0, 0, 0, 0.6);
@@ -41,7 +39,6 @@
     z-index: 1001;
 }
 
-/* Buttons Styling */
 #audio-controls button {
     background: none;
     border: none;
@@ -51,7 +48,6 @@
     color: white;
 }
 
-/* Volume Slider Styling */
 #volume-bar {
     width: 100px;
     height: 5px;
