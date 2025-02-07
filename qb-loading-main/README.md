@@ -29,7 +29,7 @@
 
 ## How To Customize
 
-* #### Bridge does not show while loading into server
+* #### To change .mp3 files drop 3 new files in the `assets` folder then head over to [html/index.html Lines 67 - 69](https://github.com/OfficerMills/qb-loading/blob/main/qb-loading-main%2Fhtml%2Findex.html#L67-L69) and replace the current mp3 names with the updated names(must be exact).
 * #### Use your own custom .mp4 video for the background.
 * #### Add 3 custom .mp3 files to use in the built in media player(loading video will not play sound, must use .mp3)
 * #### Volume present to 10% of max for comfortable listening.
