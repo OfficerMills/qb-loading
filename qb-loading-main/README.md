@@ -3,8 +3,7 @@
     <img width="auto" src="https://user-images.githubusercontent.com/91661118/154784761-d9e1a3de-3f34-47dc-afc2-0aecb6d17042.png"/>
 </div>
 
-<br>
-[Imgur](https://i.imgur.com/4Ves4PL.gifv)
+![Preview](https://i.imgur.com/4Ves4PL.gif)
 
 ## Key Features
 <div align="middle">
