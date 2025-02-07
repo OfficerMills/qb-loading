@@ -26,3 +26,11 @@
 ![msedge_KLht2xu4CO](https://user-images.githubusercontent.com/91661118/154890941-5bc9db8f-6f15-4cb0-a7b3-1aa60a7d0824.gif)
 
 ![how to](https://cdn-icons-png.flaticon.com/512/5360/5360954.png)
+
+__How To Customize__
+
+* #### Bridge does not show while loading into server
+* #### Use your own custom .mp4 video for the background.
+* #### Add 3 custom .mp3 files to use in the built in media player(loading video will not play sound, must use .mp3)
+* #### Volume present to 10% of max for comfortable listening.
+* #### Customable logo with smooth transition/fade for better load screen video viewing. 
