@@ -25,3 +25,4 @@
 * #### Simply locate the Javascript file found in: "html/app.js" exactly as shown underneath
 ![msedge_KLht2xu4CO](https://user-images.githubusercontent.com/91661118/154890941-5bc9db8f-6f15-4cb0-a7b3-1aa60a7d0824.gif)
 
+![how to](https://uxwing.com/how-to-question-icon/)
