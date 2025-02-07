@@ -15,20 +15,7 @@
 </div>
 
 * #### Bridge does not show while loading into server
-* #### Choose between an image carousel or video parallax
-* #### With ease customization with comments throughout instructions/information
-* #### Unique dialog menus and carousel texts
-* #### Unique default keybind carousel
-* #### Video pause and unpause toggle switch
-* #### Audio pause and unpause toggle switch
-* #### Autoplay carousel images toggle switch
 
-
-* #### Simply locate the HTML file found in: "html/index.html" exactly as shown underneath 
-
-![msedge_JyZqs9qYOF](https://user-images.githubusercontent.com/91661118/154891153-7b8a9e0b-5d89-460f-af4b-409e5105c229.gif)
-
-<br>
 
 ## Change Language
 <div align="middle">
