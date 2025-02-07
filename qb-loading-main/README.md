@@ -16,7 +16,7 @@
 
 * #### Media Controls Added for Music Control
 * #### Use your own custom .mp4 video for the background.
-* #### Add 3 custom .mp3 files to use in the built in media player(loading video will not play sound, must use .mp3)
+* #### Add your own .mp3 files to use in the built in media player(loading video will not play sound, must use .mp3)
 * #### Volume present to 10% of max for comfortable listening.
 * #### Customizable server logo with smooth transition/fade for better load screen video viewing. 
 
