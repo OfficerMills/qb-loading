@@ -5,8 +5,7 @@
 
 <br>
 
-![Loadscreen Preview](https://i.imgur.com/4Ves4PL.gif)
-
+![Loadscreen Preview](https://i.imgur.com/4Ves4PL.gifv)
 <br>
 
 ## Key Features
