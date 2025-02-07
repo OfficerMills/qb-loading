@@ -27,7 +27,7 @@
 
 ![how to](https://cdn-icons-png.flaticon.com/512/5360/5360954.png)
 
-__How To Customize__
+<u>How To Customize</u>
 
 * #### Bridge does not show while loading into server
 * #### Use your own custom .mp4 video for the background.
