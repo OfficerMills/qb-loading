@@ -4,8 +4,7 @@
 </div>
 
 <br>
-
-<a href="https://imgur.com/4Ves4PL"><img src="https://i.imgur.com/4Ves4PL.gif" title="source: imgur.com" /></a>
+[Imgur](https://i.imgur.com/4Ves4PL.gifv)
 
 ## Key Features
 <div align="middle">
