@@ -13,7 +13,7 @@
     <img width="auto" src="https://user-images.githubusercontent.com/91661118/154636617-a2ad4c09-4b60-4438-832a-ed1c505b52ea.png"/>
 </div>
 
-* #### Media Controls
+* #### Media Controls Added for Music Control
 * #### Use your own custom .mp4 video for the background.
 * #### Add 3 custom .mp3 files to use in the built in media player(loading video will not play sound, must use .mp3)
 * #### Volume present to 10% of max for comfortable listening.
