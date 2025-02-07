@@ -28,5 +28,5 @@
 * #### To change .mp3 files drop 3 new files in the `assets/audio` folder then head over to [html/index.html Lines 59 - 61](https://github.com/OfficerMills/qb-loading/blob/main/qb-loading-main%2Fhtml%2Findex.html#L59-L61) and replace the current mp3 names with the updated names(must match file names of newly added mp3 files).
   * The first song listed in `index.html` will be the first song that auto plays each time a player loads into the server.
 * #### To change the logo to your custom logo, drop your new logo home in the `assets/branding` folder and remove the current image. Rename your image to `qbcore.svg` to make things easier. Done.
-* #### Add 3 custom .mp3 files to use in the built in media player(loading video will not play sound, must use .mp3)
+* #### Add your favorite .mp3 files to use the built in media player(loading video will not play sound, must use .mp3)
 * #### Volume present to 10% of max for comfortable listening.
