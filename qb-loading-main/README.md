@@ -15,6 +15,10 @@
 </div>
 
 * #### Bridge does not show while loading into server
+* #### Use your own custom .mp4 video for the background.
+* #### Add 3 custom .mp3 files to use in the built in media player(loading video will not play sound, must use .mp3)
+* #### Volume present to 10% of max for comfortable listening.
+* #### Customable logo with smooth transition/fade for better load screen video viewing. 
 
 
 ## Change Language
