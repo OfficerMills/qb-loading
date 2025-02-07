@@ -5,7 +5,7 @@
 
 <br>
 
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/91661118/154891228-1fffbd8c-8b07-4175-bd25-fbfbd7e3ed38.gif)
+![ezgif com-gif-maker](https://cdn.discordapp.com/attachments/1326613458892095539/1326613461194637434/2025-01-08_11-52-19.mp4?ex=67a6f4d0&is=67a5a350&hm=6cb325208a6467f16c0d87672aa33bd3795435ff4c07b0b7437de69bb38829d2&)
 
 <br>
 
