@@ -3,7 +3,7 @@ const { ref } = Vue
 const load = Vue.createApp({
   setup () {
     return {
-      CarouselText1: 'You can add/remove items, vehicles, jobs & gangs through the shared folder.',
+      CarouselText1: 'Carousel has been removed from this video variation of qb-loading.',
 
       firstap: ref(true),
       secondap: ref(true),
