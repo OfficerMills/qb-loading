@@ -1,6 +1,8 @@
 # qb-loading 
 *(Video Background)*
 
+![qb-core](https://camo.githubusercontent.com/84e08e864cc999435cd88983acf4b6a47fede9bf263fd716772ad42e85d13753/68747470733a2f2f692e696d6775722e636f6d2f474846536843762e706e67)
+
 ## Preview
 <div align="middle">
     <img width="auto" src="https://user-images.githubusercontent.com/91661118/154784761-d9e1a3de-3f34-47dc-afc2-0aecb6d17042.png"/>
